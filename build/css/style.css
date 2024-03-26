@@ -599,6 +599,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
 .block {
   display: block;
 }
@@ -935,6 +939,11 @@ video {
 .after\:top-0::after {
   content: var(--tw-content);
   top: 0px;
+}
+
+.after\:right-0::after {
+  content: var(--tw-content);
+  right: 0px;
 }
 
 .after\:translate-x-2::after {
