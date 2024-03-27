@@ -65,7 +65,7 @@
           </ul>
           <hr class="mx-auto bg-black dark:bg-white w-1/2">
         </section>
-        <section id="testimonials" class="p-6 my-12">
+        <section id="testimonials" class="p-6 my-12 scroll-mt-20">
           <h2 class="text-4xl font text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Testimonials</h2>
           <figure class="my-12 dark:bg-teal-900 rounded-3xl">
             <blockquote class="dark:bg-teal-900  pl-6 pr-2 py-12 rounded-3xl relative">
@@ -98,9 +98,15 @@
           </figure>
           <hr class="mx-auto bg-black dark:bg-white w-1/2">
         </section>
-        <section id="contats" class="p-6 my-12">
+        <section id="contats" class="p-6 my-12 scroll-mt-16">
           <h2 class="text-4xl font text-center sm:text-5xl mb-6 text-slate-900 dark:text-white">Contats Us</h2>
-          
+          <form action="" class="max-w-4xl mx-auto text-2xl sm:text-3xl flex flex-col items-left gap-4">
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject"  minlength="3" maxlength="60" required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solidborder-slate-900 dark:border-none outline-none">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"required class="w-full text-black text-2xl sm:text-3xl p-3 rounded-xl border border-solidborder-slate-900 dark:border-none outline-none"></textarea>
+            <button type="submit" class="bg-teal-700 hover:bg-teal-600 active:bg-teal-500 text-white p-3 w-48 rounded-xl border border-solid border-slate-900 dark:border-none">Submit</button>
+          </form>
         </section>
     </main>
 </body>
