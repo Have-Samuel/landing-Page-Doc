@@ -2,3 +2,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Defining a Custom Class*/
+/* 68px come from the Header section with p-4 = 32px and h1 with text-3xl = 36px line-height*/
+@layer utilities{
+    .section-min-height{
+       min-height: calc(100vh - 68px);
+    }
+}
