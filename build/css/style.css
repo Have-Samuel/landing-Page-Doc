@@ -687,10 +687,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -701,6 +697,10 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .space-x-6 > :not([hidden]) ~ :not([hidden]) {
@@ -1035,6 +1035,11 @@ video {
   opacity: 0.9;
 }
 
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
 .active\:bg-teal-500:active {
   --tw-bg-opacity: 1;
   background-color: rgb(20 184 166 / var(--tw-bg-opacity));
@@ -1100,18 +1105,6 @@ video {
 
   .md\:hidden {
     display: none;
-  }
-}
-
-@media (min-aspect-ratio: 3/2) {
-  .widescreen\:section-min-height{
-    min-height: calc(100vh - 68px);
-  }
-}
-
-@media (min-aspect-ratio: 13/20) {
-  .tallscreen\:section-min-height{
-    min-height: calc(100vh - 68px);
   }
 }
 
