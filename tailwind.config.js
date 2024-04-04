@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: 'selector',
-  content: ['./build/*.html', './build/js/*.js'],
+  // content: ['./build/*.html', './build/js/*.js']
+  content: ['./build/**/*.{html,js}'],
   theme: {
     extend: {
       screens: {
         'widescreen': {'raw': '(min-aspect-ratio: 3/2)'}, // 1.5
-        'tallscreen': {'raw': '(min-aspect-ratio: 13/20)'}, // 0.65
+        'tallscreen': {'raw': '(max -aspect-ratio: 13/20)'}, // 0.65
       },
       /* Animation Frames */
       keyframes: {
